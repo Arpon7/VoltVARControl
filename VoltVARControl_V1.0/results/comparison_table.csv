@@ -1,0 +1,7 @@
+Case,Metric,Base (paper/TASRL),Yours
+IEEE-13,Mean recovery time (s),2.6,1.0
+IEEE-13,Mean transient (sum of rewards),-6.76,-1.5000000000000002
+IEEE-13,Steady-state (ΔF if yours; paper F otherwise),-0.11,0.0001499999976174453
+IEEE-123,Mean recovery time (s),12.08,
+IEEE-123,Mean transient (sum of rewards),-333.03,
+IEEE-123,Steady-state (ΔF if yours; paper F otherwise),-5.95,

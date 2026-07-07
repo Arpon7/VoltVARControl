@@ -1,0 +1,24 @@
+#updated@22.10.25
+
+# 13-bus (quick)
+python train_DDPG.py --case 13 --preset fast
+
+# 123-bus (quick)
+python train_DDPG.py --case 123 --preset fast
+
+
+python test.py
+
+python test_real_data.py
+
+python eval_paper_protocol.py --case 13 --ctrl 2,7,9 --dq_max 0.30 --alpha 5 --out results\metrics_13.json
+
+python rescore_playback_with_paper_objective.py --in_csv results\trajectory_doe_13.csv --out_csv results\trajectory_doe_ieee13_scored.csv
+
+
+python compare_tables.py --metrics_13 results\metrics_13.json --doe13 results\trajectory_doe_ieee13_scored.csv --paper --out results\comparison_table.csv 
+
+python compare_tables.py --metrics_123 results\metrics_123.json --doe123 results\trajectory_doe_ieee123_scored.csv --paper --out results\comparison_table.csv
+
+
+

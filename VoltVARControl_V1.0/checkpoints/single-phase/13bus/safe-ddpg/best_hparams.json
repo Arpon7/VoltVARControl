@@ -1,0 +1,8 @@
+{
+  "ctx_dim": 12,
+  "hidden": 64,
+  "dq_max": 0.25,
+  "value_lr": 0.0003,
+  "policy_lr": 0.0001,
+  "soft_tau": 0.01
+}
